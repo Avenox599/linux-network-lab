@@ -17,3 +17,7 @@ This project demonstrates a basic network setup between two Linux virtual machin
 
 ## Author
 Emmanuel
+
+# linux-network-lab
+VM network setup with NAT, internal network, ping and SSH
+
