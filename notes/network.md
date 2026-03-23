@@ -20,7 +20,12 @@ Each VM has two network interfaces:
 
 Before assigning static IP addresses, I scanned the network to check available IPs:
 
-```bash
+### 2. Network Configuration
+
+Before assigning static IP addresses, I scanned the network to check available IPs:
+
+
+sudo nmap -sn 192.168.43.0/24
 sudo nmap -sn <gateway_ip>
 
 If nmap is not installed:
@@ -48,10 +53,9 @@ network:
       addresses:
         - 192.168.43.3/24
       nameservers:
-        addresses: [1.1.1.1, 8.8.8.8]```
+        addresses: [1.1.1.1, 8.8.8.8]
 
-
-###3. SSH Configuration
+3. SSH Configuration
 Install SSH on both machines:
 
 sudo apt install openssh-server
@@ -60,7 +64,7 @@ sudo systemctl start ssh
 Then connect from VM1:
 ssh emmanuel@192.168.43.3
 
-###4. Connectivity Test
+4. Connectivity Test
 Ping test from VM2:
 
 ping 192.168.43.1
@@ -73,7 +77,7 @@ Tools Used
   Nmap
   OpenSSH
 
-###Author
+Author
 Emmanuel
 
 ---
