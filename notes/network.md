@@ -26,7 +26,8 @@ sudo nmap -sn <gateway_ip>
 If nmap is not installed:
 sudo apt install nmap
 
-VM1 Configuration
+#### VM1 Configuration
+```bash
 network:
   version: 2
   renderer: NetworkManager
@@ -36,8 +37,10 @@ network:
     enp0s8:
       addresses:
         - 192.168.43.1/24
+```
 
-VM2 Configuration
+#### VM2 Configuration
+```bash
 network:
   version: 2
   renderer: NetworkManager
@@ -49,8 +52,9 @@ network:
         - 192.168.43.3/24
       nameservers:
         addresses: [1.1.1.1, 8.8.8.8]
+```
 
-3. SSH Configuration
+### 3. SSH Configuration
 Install SSH on both machines:
 
 sudo apt install openssh-server
@@ -59,7 +63,7 @@ sudo systemctl start ssh
 Then connect from VM1:
 ssh emmanuel@192.168.43.3
 
-4. Connectivity Test
+### 4. Connectivity Test
 Ping test from VM2:
 
 ping 192.168.43.1
