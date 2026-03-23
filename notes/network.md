@@ -20,11 +20,6 @@ Each VM has two network interfaces:
 
 Before assigning static IP addresses, I scanned the network to check available IPs:
 
-### 2. Network Configuration
-
-Before assigning static IP addresses, I scanned the network to check available IPs:
-
-
 sudo nmap -sn 192.168.43.0/24
 sudo nmap -sn <gateway_ip>
 
