@@ -22,6 +22,7 @@ Each VM has two network interfaces:
 You can use nmap to discover devices on the network:
 ```bash
 nmap -sn <gateway_ip>
+```
 If nmap is not installed:
 ```bash
 sudo apt install nmap
