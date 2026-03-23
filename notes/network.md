@@ -48,7 +48,7 @@ network:
       addresses:
         - 192.168.43.3/24
       nameservers:
-        addresses: [1.1.1.1, 8.8.8.8]
+        addresses: [1.1.1.1, 8.8.8.8]```
 
 
 ###3. SSH Configuration
