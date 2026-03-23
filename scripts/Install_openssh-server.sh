@@ -5,7 +5,7 @@ do
     if [ $user_choix == "O" ] || [ $user_choix == "o" ]; then
         echo "Lancement du programme d'installation et d'activation..."
         sudo apt install openssh-server -y
-        sudo systemctl strat ssh
+        sudo systemctl start ssh
         echo "Fin de l'installation"
     elif [ $user_choix == "N" ] || [ $user_choix == "n" ]; then
         echo "D'accord."
