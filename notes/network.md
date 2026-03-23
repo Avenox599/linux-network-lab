@@ -56,10 +56,10 @@ network:
 
 ### 3. SSH Configuration
 Install SSH on both machines:
-
+```bash
 sudo apt install openssh-server
 sudo systemctl start ssh
-
+``` 
 Then connect from VM1:
 ssh emmanuel@192.168.43.3
 
@@ -70,13 +70,13 @@ ping 192.168.43.1
 
 Result: successful communication between both machines.
 
-Tools Used
+### Tools Used
   Linux Mint
   VirtualBox
   Nmap
   OpenSSH
 
-Author
+### Author
 Emmanuel
 
 ---
