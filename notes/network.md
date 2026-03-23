@@ -50,8 +50,8 @@ network:
       nameservers:
         addresses: [1.1.1.1, 8.8.8.8]
 
-----
-3. SSH Configuration
+---
+### 3. SSH Configuration
 Install SSH on both machines:
 
 sudo apt install openssh-server
