@@ -27,7 +27,7 @@ If nmap is not installed:
 ```bash
 sudo apt install nmap
 ```
-VM1 Configuration
+#### VM1 Configuration
 ```bash
 network:
   version: 2
