@@ -11,8 +11,8 @@ This project demonstrates how to create a network between two Linux virtual mach
 Two Linux virtual machines were created using VirtualBox.
 
 Each VM has two network interfaces:
-- **NAT**: for internet access
-- **Internal Network**: for communication between VMs
+- NAT: for internet access
+- Internal Network: for communication between VMs
 
 ---
 
@@ -20,13 +20,14 @@ Each VM has two network interfaces:
 
 Before assigning static IP addresses, I scanned the network to check available IPs:
 
-sudo nmap -sn 192.168.43.0/24
+```bash
 sudo nmap -sn <gateway_ip>
-
+```
 If nmap is not installed:
+```bash
 sudo apt install nmap
-
-#### VM1 Configuration
+```
+VM1 Configuration
 ```bash
 network:
   version: 2
@@ -38,8 +39,7 @@ network:
       addresses:
         - 192.168.43.1/24
 ```
-
-#### VM2 Configuration
+#### VM2 Configuration
 ```bash
 network:
   version: 2
@@ -53,32 +53,31 @@ network:
       nameservers:
         addresses: [1.1.1.1, 8.8.8.8]
 ```
-
 ### 3. SSH Configuration
 Install SSH on both machines:
 ```bash
 sudo apt install openssh-server
 sudo systemctl start ssh
-``` 
+```
 Then connect from VM1:
 ```bash
 ssh emmanuel@192.168.43.3
-``` 
-
+```
 ### 4. Connectivity Test
-Ping test from VM2:
+Ping test:
 ```bash
 ping 192.168.43.1
 ```
-Result: successful communication between both machines.
+Result:
+  Successful communication between both machines
+
+### Screenshots
 
 ### Tools Used
-  Linux Mint
-  VirtualBox
-  Nmap
-  OpenSSH
+Linux Mint
+VirtualBox
+Nmap
+OpenSSH
+# Author
 
-### Author
 Emmanuel
-
-
