@@ -74,11 +74,12 @@ Result:
 ## Screenshots
 
 ### Network Configuration
-![Network Config](screenshots/config_VM1.png)
-![Network Config](screenshots/config_VM2.png)
+![Network Config](screenshots/Config_VM1.png)\n
+![Network Config](screenshots/Config_VM2.png)
 
 ### Ping Test
-![Ping Test](screenshots/ping.png)
+![Ping Test](screenshots/ping_VM1.png)\n
+![Ping Test](screenshots/ping_VM2.png)
 
 ### SSH Connection
 ![SSH Connection](screenshots/ssh.png)
