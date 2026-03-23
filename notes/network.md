@@ -51,7 +51,7 @@ network:
         addresses: [1.1.1.1, 8.8.8.8]
 
 
-3. SSH Configuration
+### 3. SSH Configuration
 Install SSH on both machines:
 
 sudo apt install openssh-server
@@ -60,7 +60,7 @@ sudo systemctl start ssh
 Then connect from VM1:
 ssh emmanuel@192.168.43.3
 
-4. Connectivity Test
+### 4. Connectivity Test
 Ping test from VM2:
 
 ping 192.168.43.1
@@ -73,7 +73,7 @@ Tools Used
   Nmap
   OpenSSH
 
-Author
+### Author
 Emmanuel
 
 ---
