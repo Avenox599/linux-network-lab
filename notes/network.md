@@ -80,18 +80,6 @@ Result: successful communication between both machines.
 
 ### Author
 Emmanuel
-
----
-
-# 📸 Pour tes images
-
-👉 Mets tes images dans `screenshots/`
-
-Puis dans README :
-
-```markdown
-## Screenshots
-
 ![Ping Test](screenshots/ping.png)
 
 
