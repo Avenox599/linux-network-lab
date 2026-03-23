@@ -74,7 +74,8 @@ Result:
 ## Screenshots
 
 ### Network Configuration
-![Network Config](screenshots/config.png)
+![Network Config](screenshots/config_VM1.png)
+![Network Config](screenshots/config_VM2.png)
 
 ### Ping Test
 ![Ping Test](screenshots/ping.png)
