@@ -39,7 +39,7 @@ network:
       addresses:
         - 192.168.43.1/24
 ```
-#### VM2 Configuration
+#### VM2 Configuration
 ```bash
 network:
   version: 2
