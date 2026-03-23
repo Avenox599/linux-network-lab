@@ -74,13 +74,15 @@ Result:
 ## Screenshots
 
 ### Network Configuration
-![Network Config](screenshots/config.png)
+![Network Config](../screenshots/Config_VM1.png)
+![Network Config](../screenshots/Config_VM2.png)
 
 ### Ping Test
-![Ping Test](screenshots/ping.png)
+![Ping Test](../screenshots/ping_VM1.png)
+![Ping Test](../screenshots/ping_VM2.png)
 
 ### SSH Connection
-![SSH Connection](screenshots/ssh.png)
+![SSH Connection](../screenshots/ssh.png)
 
 ### Tools Used
 Linux Mint
