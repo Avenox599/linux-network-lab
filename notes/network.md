@@ -71,7 +71,16 @@ ping 192.168.43.1
 Result:
   Successful communication between both machines
 
-### Screenshots
+## Screenshots
+
+### Network Configuration
+![Network Config](screenshots/config.png)
+
+### Ping Test
+![Ping Test](screenshots/ping.png)
+
+### SSH Connection
+![SSH Connection](screenshots/ssh.png)
 
 ### Tools Used
 Linux Mint
