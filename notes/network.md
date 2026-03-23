@@ -17,12 +17,11 @@ Each VM has two network interfaces:
 ---
 
 ### 2. Network Configuration
+#### Optional: Network Scanning
 
-Before assigning static IP addresses, I scanned the network to check available IPs:
-
+You can use nmap to discover devices on the network:
 ```bash
-sudo nmap -sn <gateway_ip>
-```
+nmap -sn <gateway_ip>
 If nmap is not installed:
 ```bash
 sudo apt install nmap
