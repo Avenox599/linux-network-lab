@@ -61,13 +61,15 @@ sudo apt install openssh-server
 sudo systemctl start ssh
 ``` 
 Then connect from VM1:
+```bash
 ssh emmanuel@192.168.43.3
+``` 
 
 ### 4. Connectivity Test
 Ping test from VM2:
-
+```bash
 ping 192.168.43.1
-
+```
 Result: successful communication between both machines.
 
 ### Tools Used
