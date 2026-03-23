@@ -11,8 +11,8 @@ This project demonstrates how to create a network between two Linux virtual mach
 Two Linux virtual machines were created using VirtualBox.
 
 Each VM has two network interfaces:
-- **NAT**: for internet access
-- **Internal Network**: for communication between VMs
+- NAT: for internet access
+- Internal Network: for communication between VMs
 
 ---
 
@@ -22,11 +22,13 @@ Before assigning static IP addresses, I scanned the network to check available I
 
 ```bash
 sudo nmap -sn <gateway_ip>
-
+```
 If nmap is not installed:
+```bash
 sudo apt install nmap
-
+```
 VM1 Configuration
+```bash
 network:
   version: 2
   renderer: NetworkManager
@@ -36,8 +38,9 @@ network:
     enp0s8:
       addresses:
         - 192.168.43.1/24
-
-VM2 Configuration
+```
+#### VM2 Configuration
+```bash
 network:
   version: 2
   renderer: NetworkManager
@@ -49,44 +52,41 @@ network:
         - 192.168.43.3/24
       nameservers:
         addresses: [1.1.1.1, 8.8.8.8]
-
----
+```
 ### 3. SSH Configuration
 Install SSH on both machines:
-
+```bash
 sudo apt install openssh-server
 sudo systemctl start ssh
-
+```
 Then connect from VM1:
+```bash
 ssh emmanuel@192.168.43.3
-
-4. Connectivity Test
-Ping test from VM2:
-
+```
+### 4. Connectivity Test
+Ping test:
+```bash
 ping 192.168.43.1
+```
+Result:
+  Successful communication between both machines
 
-Result: successful communication between both machines.
-
-Tools Used
-  Linux Mint
-  VirtualBox
-  Nmap
-  OpenSSH
-
-Author
-Emmanuel
-
----
-
-# 📸 Pour tes images
-
-👉 Mets tes images dans `screenshots/`
-
-Puis dans README :
-
-```markdown
 ## Screenshots
 
+### Network Configuration
+![Network Config](screenshots/config.png)
+
+### Ping Test
 ![Ping Test](screenshots/ping.png)
 
+### SSH Connection
+![SSH Connection](screenshots/ssh.png)
 
+### Tools Used
+Linux Mint
+VirtualBox
+Nmap
+OpenSSH
+# Author
+
+Emmanuel
