@@ -80,6 +80,5 @@ Result: successful communication between both machines.
 
 ### Author
 Emmanuel
-![Ping Test](screenshots/ping.png)
 
 
